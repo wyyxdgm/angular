@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="rootApp">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>南巷花嫁</title>
+    <meta name="Keywords" content="南巷花嫁,儿童,百日庆,活动,摆宴,宴席,节目,编排,生日">
+    <meta name="Description" content="南巷花嫁">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% include ./tmpl/csslib.html %>
+    <!-- build:css /build/css/index.min.css -->
+    <link type="text/css" rel="stylesheet" href="/public/css/index.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="/public/css/index2.css" media="screen" />
+    <!-- /build -->
+</head>
+
+<body>
+    <div ng-controller="myCtrl">
+        <img src="/public/imgs/head.png" /> 名:
+        <input type="text" ng-model="firstName">
+        <br> 姓:
+        <input type="text" ng-model="lastName">
+        <br>
+        <br> 姓名: {{firstName + " " + lastName}}
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">免费域名注册</li>
+            <li class="list-group-item">免费 Window 空间托管</li>
+            <li class="list-group-item">图像的数量</li>
+            <li class="list-group-item">24*7 支持</li>
+            <li class="list-group-item">每年更新成本</li>
+        </ul>
+        <ul class="list-group" ng-repeat="phone in phones">
+            <li class="list-group-item"> {{phone.name}}
+                <p>{{phone.snippet}}</p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<% include ./tmpl/jslib.html %>
+<!-- build:js /build/js/index.min.js -->
+<script type="text/javascript" src="/public/js/index.js"></script>
+<!-- /build -->

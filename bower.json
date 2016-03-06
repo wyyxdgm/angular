@@ -1,0 +1,32 @@
+{
+  "name": "wedding",
+  "description": "",
+  "main": "",
+  "authors": [
+    "guimaodai <wyyxdgm@163.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "amd"
+  ],
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "requirejs": "^2.1.22",
+    "angular": "angularjs#^1.5.0",
+    "bootstrap": "^3.3.6",
+    "angular-route": "^1.5.0",
+    "angular-strap": "^2.3.7"
+  },
+  "devDependencies": {
+    "html5shiv": "^3.7.3",
+    "respond": "^1.4.2"
+  }
+}
